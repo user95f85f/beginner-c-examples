@@ -5,15 +5,10 @@
 int main(int _argc, char *_argv[]){
   FILE *f;
   char tmpSz[255];
-  int n1, n2, n3;
-  int *p;
-  int arNums[7];
+  int n1=1, n2=2, n3=3;
+  int arNums[7] = {4,5,6,7,8,9,10};
+  int *p = arNums;
   int i;
-  
-  /*init*/
-  n1 = 1; n2 = 2; n3 = 3;
-  p = arNums;
-  p[0] = 4; p[1] = 5; p[2] = 6; p[3] = 7; p[4] = 8; p[5] = 9; p[6] = 10;
   
   f = fopen("a.dat", "w");
   if(f == NULL) return 3;
