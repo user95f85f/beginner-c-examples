@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <unistd.h> /*unlink*/
 
-int main(int _argc, char *argv[]){
+int main(int _argc, char *_argv[]){
   FILE *f;
   char tmpSz[255];
   int n1, n2, n3;
